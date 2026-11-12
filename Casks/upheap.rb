@@ -1,6 +1,6 @@
 cask "upheap" do
-  version "0.2.0"
-  sha256 "92411ca5d04e899671e5843ee8dabbfe2b023e54457c5002fb7975ff6d1fe2c2"
+  version "0.3.0"
+  sha256 "18c424e793c4d69209b12aed74f6a2fd3c1778c59832f5ac7d483bf6e51d7a09"
 
   url "https://github.com/bzzzzzz/upheap/releases/download/v#{version}/upheap-aarch64-apple-darwin.tar.gz"
   name "upheap"
