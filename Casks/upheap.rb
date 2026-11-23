@@ -1,6 +1,6 @@
 cask "upheap" do
-  version "0.8.0"
-  sha256 "4b2ed6225cad8f65ec5b853f4ab43e7d6dcd829ea2e6b885b1df461c68d896fa"
+  version "0.9.0"
+  sha256 "0ec39cfc8485122bdf2e85feaa53282eac9eebf3f76ff9ee59e4e3489ab3c276"
 
   url "https://github.com/bzzzzzz/upheap/releases/download/v#{version}/upheap-aarch64-apple-darwin.tar.gz"
   name "upheap"
@@ -18,7 +18,7 @@ cask "upheap" do
   binary "upheap"
 
   # The binary isn't notarized, so Gatekeeper would refuse to run it while it carries the quarantine flag Homebrew
-  # sets on downloads (design/decisions.md, decision 30).
+  # sets on downloads (decisions.md, decision 30).
   postflight_steps do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/upheap"]
   end
